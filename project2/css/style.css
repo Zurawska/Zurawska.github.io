@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i|Cardo:400,400i");
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif; }
+
+p {
+  color: #6c7279;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px; }
+
+.jumbotron {
+  background-image: url("../images/layer-34.jpg");
+  background-size: cover;
+  margin: 0;
+  padding: 0; }
+  .jumbotron h1 {
+    text-align: center;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 71px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 9%; }
+    @media (max-width: 991px) {
+      .jumbotron h1 {
+        font-size: 2.5em; } }
+  .jumbotron h2 {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: center;
+    margin-top: 41px;
+    margin-bottom: 77px;
+    padding: 0 9%; }
+
+.btn-menu, .btn-download {
+  width: 200px;
+  height: 46px;
+  border-radius: 2px;
+  background-color: #e84545;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 21px;
+  text-transform: uppercase;
+  outline: none !important; }
+  .btn-menu:hover, .btn-download:hover {
+    background-color: #3A3E64;
+    text-decoration: none;
+    color: #ffffff; }
+  .btn-menu:focus, .btn-download:focus {
+    color: #ffffff; }
+
+.navbar-default {
+  background-color: inherit;
+  border: 0;
+  padding: 25px 0;
+  margin: 0; }
+  .navbar-default .navbar-header {
+    margin-left: 15px; }
+  .navbar-default .navbar-nav li a {
+    opacity: 0.75;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase; }
+    .navbar-default .navbar-nav li a:hover {
+      color: #66697F; }
+
+.slogan {
+  padding: 12% 0; }
+
+.features h3 {
+  color: #2d3033;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.features .features-item {
+  padding: 10% 32px; }
+
+.work {
+  margin-bottom: 5.32%; }
+  .work [class*="col"] {
+    padding: 0;
+    overflow: hidden; }
+    .work [class*="col"]:hover .layer {
+      opacity: 1;
+      display: inline-block;
+      cursor: pointer;
+      transform: translate(0, 0); }
+  .work img {
+    width: 100%; }
+  .work p {
+    color: #ffffff; }
+  .work h4 {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .work a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: block; }
+  .work .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .work .layer {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(232, 69, 69, 0.9);
+    height: 100%;
+    opacity: 0;
+    transform: translate(0, -50%);
+    transition: opacity .3s, transform .3s; }
+
+.work-image {
+  padding: 0; }
+
+@media (max-width: 1200px) {
+  .work .layer {
+    opacity: 1;
+    background-color: inherit;
+    left: 0;
+    transform: translate(0, 0); }
+  .work .text {
+    background-color: rgba(232, 69, 69, 0.9);
+    padding: 15px; } }
+
+.team {
+  margin-bottom: 5.37%; }
+  .team h3 {
+    color: #2d3033;
+    font-size: 22px;
+    font-weight: 400; }
+  .team h5 {
+    color: #e84545;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase; }
+  .team ul {
+    padding: 0; }
+  .team li {
+    list-style: none;
+    display: inline-block; }
+  .team a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border: 1px solid #e8ecee;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 40px; }
+
+.employee {
+  width: 100%; }
+
+@media (max-width: 767px) {
+  .employee {
+    padding: 10%; }
+  .team-item {
+    text-align: center; } }
+
+.clients .caption {
+  background-color: #53354a;
+  padding: 3% 13% 0 4.47%; }
+
+.clients .page {
+  padding: 0; }
+
+.clients .board {
+  background-color: #53354a; }
+
+.clients h6 {
+  color: #ffffff;
+  font-family: "Cardo", serif;
+  font-size: 36px;
+  font-style: italic;
+  line-height: 42px; }
+
+.clients p {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.carousel-indicators {
+  left: 70%; }
+  .carousel-indicators li {
+    background-color: #ffffff;
+    opacity: 0.2; }
+  .carousel-indicators .active {
+    background-color: #ffffff;
+    opacity: 1; }
+
+@media (max-width: 1200px) {
+  .clients .caption {
+    padding: 0 10% 0 3%; }
+    .clients .caption h6 {
+      font-size: 1.9em; }
+    .clients .caption p {
+      font-size: 0.8em; } }
+
+@media (max-width: 991px) {
+  .clients .caption {
+    text-align: center;
+    padding: 0 10% 60px; }
+  .carousel-indicators {
+    left: 50%; } }
+
+.download {
+  text-align: center; }
+  .download h2 {
+    color: #2d3033;
+    font-size: 28px;
+    font-weight: 300; }
+  .download p {
+    color: #2d3033;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 21px;
+    text-transform: uppercase; }
+
+.btn-download {
+  width: 280px;
+  height: 46px; }
+
+.download-item {
+  padding: 8.55% 10%; }
+
+@media (max-width: 767px) {
+  .btn-download {
+    width: 200px; } }
+
+.footer {
+  background-color: #3a3e64; }
+  .footer h3 {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .footer p {
+    opacity: 0.5;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px; }
+  .footer ul {
+    padding: 0; }
+  .footer li {
+    list-style: none;
+    display: inline-block; }
+  .footer a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border: 1px solid #ffffff;
+    background-color: inherit;
+    text-align: center;
+    line-height: 40px; }
+
+.contact-item {
+  padding: 8.55% 10%; }
+
+.copyrights {
+  background-color: #313454; }
+
+.copyrights-item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  padding: 20px 10px;
+  /* Text style for "Copyright" */
+  color: #808080;
+  font-family: Raleway;
+  /* Text style for "Y" */
+  /* Text style for "by Kamal C" */ }
+  .copyrights-item .heart {
+    color: #e84545;
+    font-family: Webdings; }
+  .copyrights-item .author {
+    color: #ffffff;
+    font-family: Raleway; }
+  .copyrights-item p {
+    margin: 0; }
+
+/*# sourceMappingURL=style.css.map */
