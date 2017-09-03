@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+body {
+  margin: 0;
+  font-family: 'Varela Round', sans-serif;
+  letter-spacing: 4px; }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1280px; } }
+
+h2 {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500; }
+
+#home {
+  background-image: url("../images/jumbotron.png");
+  background-size: cover;
+  margin: 0;
+  border-radius: 0; }
+
+#myNavbar ul li {
+  width: 20%; }
+  #myNavbar ul li a {
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: normal; }
+    #myNavbar ul li a:hover {
+      color: #16a085; }
+    #myNavbar ul li a:focus {
+      color: #ccc; }
+
+.navbar-nav {
+  width: 100%;
+  padding: 0 15%; }
+
+.navbar {
+  background-color: transparent;
+  border: none; }
+
+@media (max-width: 992px) {
+  #myNavbar ul li {
+    width: 25%; }
+    #myNavbar ul li:nth-child(3) {
+      display: none; }
+  .navbar-nav {
+    padding: 0; } }
+
+@media (max-width: 767px) {
+  .navbar-nav {
+    text-align: left; } }
+
+.icons {
+  text-align: center;
+  padding: 0; }
+  .icons li {
+    display: inline-block;
+    padding: 4px; }
+  .icons i {
+    color: #ffffff;
+    font-size: 25px; }
+
+.morph {
+  transition: all 0.5s ease; }
+
+.morph:hover {
+  transform: rotate(360deg); }
+
+.slogan {
+  text-align: center;
+  padding: 16% 0; }
+  .slogan h1 {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase; }
+
+.btn-start, .btn-menu {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 166px;
+  height: 49px;
+  border-radius: 3px;
+  background-color: #16a085;
+  margin-top: 20px; }
+  .btn-start:hover, .btn-menu:hover {
+    background-color: #11846d;
+    text-decoration: none;
+    color: #ffffff; }
+
+.photo-item {
+  background-color: #F5F6F7;
+  background-image: url("../images/6-layers.png");
+  background-repeat: no-repeat;
+  background-position: 80% -20%; }
+
+p {
+  line-height: 30px;
+  font-weight: 300;
+  letter-spacing: normal; }
+  p span {
+    font-weight: 700; }
+
+.content {
+  padding: 10% 20%; }
+
+h3 {
+  font-size: 18px;
+  color: #16a085;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 24px;
+  padding-bottom: 20px; }
+
+@media (max-width: 991px) {
+  .photo-item {
+    background-image: none; }
+  .content {
+    text-align: center; } }
+
+.btn-menu {
+  width: 192px;
+  height: 51px; }
+
+.phone {
+  background-image: url("../images/phone.png");
+  background-repeat: no-repeat;
+  background-position: 10% 140px;
+  padding: 10% 5% 5%; }
+
+.arrow {
+  border: 0;
+  background-color: inherit;
+  margin-top: 10%; }
+
+.fa-chevron-left, .fa-chevron-right {
+  font-size: 25px; }
+
+.controllers {
+  padding-top: 25px; }
+
+.owl-prev, .owl-next {
+  padding: 10px;
+  display: inline-block; }
+
+@media (max-width: 991px) {
+  .phone {
+    background-image: none; }
+  .owl-carousel {
+    text-align: center; }
+  .phone {
+    text-align: center; }
+    .phone .btn-menu {
+      display: inline; } }
+
+.community-content {
+  background-color: #F5F6F7; }
+
+h4 {
+  font-size: 18px;
+  color: #373737;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 20px;
+  padding: 20px 0; }
+
+.community-item {
+  padding: 30%;
+  text-align: center; }
+  .community-item p {
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: normal; }
+
+.community-item-photo {
+  padding: 30% 0; }
+
+@media (max-width: 1200px) {
+  .community-item-photo {
+    padding: 5% 0;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translate(-50%, 0); }
+  .community-item {
+    padding: 5%; } }
+
+.subscribe-item {
+  text-align: center;
+  background-image: url("../images/livello-3.png"); }
+  .subscribe-item h2 {
+    margin-top: 0;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 25% 0 2% 0;
+    font-size: 22px; }
+  .subscribe-item input::placeholder {
+    color: #373737;
+    text-transform: uppercase;
+    font-weight: bold; }
+
+.input-group {
+  width: 343px;
+  height: 60px;
+  margin: 0 0 45% 50%;
+  transform: translate(-50%, 0); }
+
+.form-control {
+  height: 100%; }
+
+.btn-secondary {
+  height: 49px;
+  width: 63px;
+  background-color: #16A085;
+  height: 100%; }
+
+.fa-check {
+  font-size: 20px;
+  color: #ffffff; }
+
+.btn-secondary:hover {
+  background-color: #1ABC9C; }
+
+.download h3 {
+  color: #373737;
+  font-size: 20px;
+  padding: 0; }
+
+.download h5 {
+  color: #373737;
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 20px;
+  padding: 0 15%;
+  font-weight: bold;
+  letter-spacing: 3px; }
+
+.download span {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px; }
+
+.download i {
+  color: #ffffff;
+  font-size: 27px;
+  position: absolute;
+  right: 5%; }
+
+.btn-success {
+  background-image: -webkit-linear-gradient(180deg, #16A085 20%, #1ABC9C 15%);
+  text-align: left;
+  width: 296px;
+  height: 56px;
+  padding: 16px 16px;
+  position: relative; }
+
+.btn-success:hover {
+  background-image: -webkit-linear-gradient(180deg, #1ABC9C 20%, #16A085 15%); }
+
+.btn-success:focus {
+  border-color: #1ABC9C; }
+
+.download-content {
+  text-align: center;
+  padding: 7%;
+  background-color: #F5F6F7; }
+
+.apple-item, .android-item {
+  padding: 25px 0 15px 0; }
+
+.apple-item {
+  text-align: right; }
+
+.android-item {
+  text-align: left; }
+
+@media (max-width: 1200px) {
+  .apple-item, .android-item {
+    text-align: center; } }
+
+.copyright h4 {
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 0; }
+
+.copyright h2 {
+  color: #373737;
+  font-weight: bold;
+  font-size: 12px; }
+
+.copyright span {
+  color: #16A085; }
+
+.copyright-items {
+  padding-left: 10%;
+  background-image: url("../images/livello-4.png");
+  background-repeat: no-repeat;
+  background-position: top 50% right 10%; }
+
+@media (max-width: 767px) {
+  .copyright-items {
+    text-align: center;
+    padding: 0; }
+    .copyright-items h4 {
+      padding-bottom: 60px; }
+  .copyright-items {
+    background-position: top 60% left 50%; } }
+
+/*# sourceMappingURL=style.css.map */
