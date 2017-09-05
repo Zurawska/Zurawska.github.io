@@ -206,21 +206,17 @@ h4 {
     font-weight: bold; }
 
 .input-group {
-  height: 60px;
-  margin: 0 22% 45% 22%;
-  display: table;}
-
-/*.form-control {
-  height: 100%; }*/
+  margin: 0 22% 45% 22%; }
+  .input-group input, .input-group button {
+    height: 60px; }
 
 .btn-secondary {
-  width: 63px;
   background-color: #16A085;
-  height: 100%; }
+  width: 60px; }
 
 .fa-check {
-  font-size: 20px;
-  color: #ffffff; }
+  color: #ffffff;
+  font-size: 20px; }
 
 .btn-secondary:hover {
   background-color: #1ABC9C; }
