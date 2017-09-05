@@ -252,15 +252,15 @@ h4 {
   color: #ffffff;
   font-size: 27px;
   position: absolute;
-  right: 5%; }
+  right: 6%; }
 
 .btn-success {
   background-image: -webkit-linear-gradient(180deg, #16A085 20%, #1ABC9C 15%);
   text-align: left;
   width: 85%;
+  letter-spacing: normal;
   padding: 16px 16px;
   position: relative;
-  min-width: 250px;
   max-width: 310px; }
 
 .btn-success:hover {
