@@ -207,7 +207,8 @@ h4 {
 
 .input-group {
   height: 60px;
-  margin: 0 22% 45% 22%; }
+  margin: 0 22% 45% 22%;
+  display: table;}
 
 .form-control {
   height: 100%; }
