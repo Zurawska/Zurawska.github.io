@@ -68,7 +68,7 @@ h2 {
   transition: all 0.5s ease; }
 
 .morph:hover {
-  transform: rotate(360deg); }
+  transform: translateY(-15px); }
 
 .slogan {
   text-align: center;
@@ -185,8 +185,8 @@ h4 {
   .community-item-photo {
     padding: 5% 0;
     display: inline-block;
-    margin-left: 50%;
-    transform: translate(-50%, 0); }
+    margin: 0 5%;
+    text-align: center; }
   .community-item {
     padding: 5%; } }
 
@@ -198,7 +198,7 @@ h4 {
     color: #ffffff;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 25% 0 2% 0;
+    padding: 25% 5% 2% 5%;
     font-size: 22px; }
   .subscribe-item input::placeholder {
     color: #373737;
@@ -206,16 +206,13 @@ h4 {
     font-weight: bold; }
 
 .input-group {
-  width: 343px;
   height: 60px;
-  margin: 0 0 45% 50%;
-  transform: translate(-50%, 0); }
+  margin: 0 22% 45% 22%; }
 
 .form-control {
   height: 100%; }
 
 .btn-secondary {
-  height: 49px;
   width: 63px;
   background-color: #16A085;
   height: 100%; }
@@ -226,6 +223,10 @@ h4 {
 
 .btn-secondary:hover {
   background-color: #1ABC9C; }
+
+@media (max-width: 567px) {
+  .input-group {
+    margin: 0 7% 45% 7%; } }
 
 .download h3 {
   color: #373737;
@@ -256,10 +257,11 @@ h4 {
 .btn-success {
   background-image: -webkit-linear-gradient(180deg, #16A085 20%, #1ABC9C 15%);
   text-align: left;
-  width: 296px;
-  height: 56px;
+  width: 85%;
   padding: 16px 16px;
-  position: relative; }
+  position: relative;
+  min-width: 250px;
+  max-width: 310px; }
 
 .btn-success:hover {
   background-image: -webkit-linear-gradient(180deg, #1ABC9C 20%, #16A085 15%); }
