@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Country search</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="country-search">
+                <img src="compass.png">
+                <h1>Country search</h1>
+                <p>Enter the name of the coutry you are interested and learn more about it.</p>
+                <input id="country-name" type="text" />
+                <button type="button" id="search">
+                    <i class="fa fa-search" aria-hidden="true"></i> Search a country
+                </button>
+                <h2>List of countries:</h2>
+                <div class="list">
+                    <ul id="countries">
+                      <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
