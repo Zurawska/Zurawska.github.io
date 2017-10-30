@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Game</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="dialogoverlay"></div>
+        <div id="dialogbox">
+            <div>
+                <div id="dialogboxhead"></div>
+                <div id="dialogboxbody"></div>
+                <div id="dialogboxfoot"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row text-center">
+                <img class="layer" src="images/layer.png">
+                <div class="text-center welcome">
+                    <h3>
+                        Welcome to the game
+                    </h3>
+                    <img id="js-hideShowImage" class="hands" src="images/logo.png" alt="rockPaperScissors">
+                </div>
+            </div>
+        </div>
+        <div id="js-newGameElement" class="container">
+            <div class="row text-center">
+                <button  id="js-newGameButton" class="new-game">
+                New game
+                </button>
+            </div>
+        </div>
+        <div id="js-playerPickElement" class="container">
+            <div class="row text-center">
+                <input id="js-playerPick_rock" type="image" class="icon" src="images/rock.png" />
+                <input id="js-playerPick_paper" type="image" class="icon" src="images/paper.png" />
+                <input id="js-playerPick_scissors" type="image" class="icon" src="images/scissors.png" />
+            </div>
+        </div>
+        <div id="js-resultsTableElement" class="container">
+            <div class="row text-center">
+                <div class="col-xs-5">
+                    <span id="js-playerPoints" class="badge">
+                        0
+                    </span>
+                    <span id="js-playerName" class="player">
+                        Player Name
+                    </span>
+                </div>
+                <div class="col-xs-2">
+                    <span>
+                        VS.
+                    </span>
+                </div>
+                <div class="col-xs-5">
+                    <span id="js-computerPoints" class="badge">
+                        0
+                    </span>
+                    <span class="player">
+                        Computer
+                    </span>
+                </div>
+                <div class="col-xs-5">
+                    <span id="js-playerPick">
+                        Player selection
+                    </span>
+                </div>
+                <div class="col-xs-2"></div>
+                <div class="col-xs-5">
+                    <span id="js-computerPick">
+                        Computer selection
+                    </span>
+                </div>
+                <div class="col-xs-5">
+                    <span id="js-playerResult">
+                        Player Score
+                    </span>
+                </div>
+                <div class="col-xs-2"></div>
+                <div class="col-xs-5">
+                    <span id="js-computerResult">
+                        Computer Score
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/scripts.js"></script>
+    </body>
+</html>
