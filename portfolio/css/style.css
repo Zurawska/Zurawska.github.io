@@ -266,7 +266,7 @@ circle:nth-of-type(7) {
   50% {
     r: 2; }
   100% {
-    r: 4; } }
+    r: 2; } }
 
 @keyframes Show-circle3 {
   10% {
@@ -294,7 +294,7 @@ circle:nth-of-type(7) {
   50% {
     r: 2; }
   100% {
-    r: 2; } }
+    r: 5; } }
 
 @keyframes Show-circle5 {
   10% {
@@ -322,7 +322,7 @@ circle:nth-of-type(7) {
   50% {
     r: 2; }
   100% {
-    r: 4; } }
+    r: 5; } }
 
 @keyframes Show-circle7 {
   10% {
@@ -336,7 +336,7 @@ circle:nth-of-type(7) {
   50% {
     r: 2; }
   100% {
-    r: 2; } }
+    r: 3; } }
 
 @keyframes Move-circle1 {
   from {
@@ -525,7 +525,8 @@ h3 {
   padding: 10px 30px;
   border: 1px solid #232338;
   border-radius: 2px;
-  box-shadow: 1px 1px 2px #151515; }
+  box-shadow: 1px 1px 2px #151515;
+  font-size: 12px; }
   .mask span:hover {
     background: inherit;
     border: 1px solid #fff;
@@ -558,8 +559,7 @@ h3 {
 .view:hover span {
   transform: scale(1);
   opacity: 1;
-  cursor: pointer;
-  font-size: 10px; }
+  cursor: pointer; }
 
 @media (max-width: 1200px) {
   .project-item {
@@ -586,6 +586,9 @@ h3 {
     background: linear-gradient(#c211cd, #d7123d);
     box-shadow: 1px 1px 2px #ccc;
     border: none; }
+    .mask span:hover {
+      border: none;
+      background: linear-gradient(#c211cd, #d7123d); }
   .mask p {
     opacity: 1;
     color: #151515;
