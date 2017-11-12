@@ -271,7 +271,7 @@ circle:nth-of-type(7) {
   50% {
     r: 2; }
   100% {
-    r: 3; } }
+    r: 5; } }
 
 @keyframes Show-circle2 {
   10% {
@@ -285,7 +285,7 @@ circle:nth-of-type(7) {
   50% {
     r: 2; }
   100% {
-    r: 3; } }
+    r: 4; } }
 
 @keyframes Show-circle3 {
   10% {
@@ -299,7 +299,7 @@ circle:nth-of-type(7) {
   50% {
     r: 2; }
   100% {
-    r: 2; } }
+    r: 5; } }
 
 @keyframes Show-circle4 {
   10% {
@@ -313,7 +313,7 @@ circle:nth-of-type(7) {
   50% {
     r: 2; }
   100% {
-    r: 3; } }
+    r: 4; } }
 
 @keyframes Show-circle5 {
   10% {
@@ -341,7 +341,7 @@ circle:nth-of-type(7) {
   50% {
     r: 2; }
   100% {
-    r: 4; } }
+    r: 3; } }
 
 @keyframes Show-circle7 {
   10% {
@@ -500,6 +500,8 @@ circle:nth-of-type(7) {
     font-size: 12px; }
   .mask p {
     padding-top: 10%; }
+  .mask a:hover {
+    text-decoration: none; }
 
 @media (min-width: 1201px) {
   .view {
@@ -565,10 +567,12 @@ circle:nth-of-type(7) {
   padding-top: 10%; }
   .technologies li, .graphic li {
     list-style: none; }
-  .technologies .empty-circle, .graphic .empty-circle {
-    border: 1px solid #c211cd; }
-  .technologies .full-circle, .graphic .full-circle {
-    border: 3px solid #c211cd; }
+
+.graphic .empty-circle {
+  border: 1px solid #c211cd; }
+
+.graphic .full-circle {
+  border: 3px solid #c211cd; }
 
 .full-circle {
   display: inline-block;
