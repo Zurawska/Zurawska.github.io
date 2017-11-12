@@ -27,26 +27,12 @@ body
                     color: #151515
                     transition: all 0.5s
 
-                    &:hover
-                        border: 2px solid
-                        border-image-source: linear-gradient(#c211cd, #d7123d)
-                        border-image-slice: 1
-
 nav
     li
         text-transform: uppercase
         text-decoration: underline
         font-size: 12px
         font-weight: bold
-        padding-top: 20px
-
-        &:first-child
-            padding-left: 90px
-            padding-right: 10px
-
-        &:last-child
-            padding-right: 90px
-            padding-left: 10px
 
 .navbar-default
 
@@ -99,16 +85,27 @@ nav
                 text-transform: uppercase
                 margin-bottom: 15px
 
-@media (max-width: 768px)
+@media (min-width: 768px)
+    .navbar-default
+        .navbar-nav
+                li
+                    a
+                        &:hover
+                            border: 2px solid
+                            border-image-source: linear-gradient(#c211cd, #d7123d)
+                            border-image-slice: 1
+
     nav
-
         li
+            padding-top: 20px
 
-            &:first-child, &:last-child
-                padding: 0
+            &:first-child
+                padding-left: 90px
+                padding-right: 10px
 
-    .name
-        padding: 0 20px
+            &:last-child
+                padding-right: 90px
+                padding-left: 10px
 
 // SECTION SLOGAN
 
@@ -117,6 +114,29 @@ nav
     position: absolute
     top: 0
     left: 0
+
+.line, circle, .flower
+    display: none
+
+.pink_flower
+    padding: 0 45%
+    width: 0%
+    height: 100%
+    animation: transformer 1s ease-in 0s forwards
+
+
+.slogan
+    padding: 10% 10%
+    text-align: center
+    position: relative
+
+h2
+    font-size: 16px
+    font-weight: bold
+
+h3
+    font-size: 16px
+    line-height: 35px
 
 @for $i from 1 through 6
     .line
@@ -198,20 +218,6 @@ $circle-end-position-y: ('-160px', '-30px', '-160px', '-70px','-130px', '0px','-
     to
         opacity: 0.9
 
-@media (min-width: 1201px)
-    .pink_flower
-        display: none
-
-@media (max-width: 1200px)
-    .line, circle, .flower
-        display: none
-
-    .pink_flower
-        padding: 0 45%
-        width: 0%
-        height: 100%
-        animation: transformer 1s ease-in 0s forwards
-
 @keyframes transformer
     from
         width: 90%
@@ -219,39 +225,23 @@ $circle-end-position-y: ('-160px', '-30px', '-160px', '-70px','-130px', '0px','-
     to
         width: 100%
 
-.slogan
-    padding: 10% 30%
-    text-align: center
-    position: relative
-
-h2
-    font-size: 16px
-    font-weight: bold
-
-h3
-    font-size: 16px
-    line-height: 35px
-
-@media (max-width: 768px)
+@media (min-width: 993px)
 
     .slogan
-        padding: 10% 10%
+        padding: 10% 30%
+
+@media (min-width: 1201px)
+    .pink_flower
+        display: none
+
+    .line, circle, .flower
+        display: block
 
 // SECTION GALLERY
 
 .projects
     text-align: center
     padding: 2% 2% 7% 2%
-
-    img
-        width: 500px
-        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-        filter: grayscale(100%)
-
-    p
-        padding: 15px
-        font-size: 12px
-        color: white
 
 .project-item
     display: inline-block
@@ -262,137 +252,88 @@ h3
     border: 10px solid #fff
     overflow: hidden
     position: relative
-    text-align: center
-    box-shadow: 1px 1px 2px #e6e6e6
     cursor: default
 
-.mask
-    background-image: url("../images/mask.png")
-    transition: all 0.5s linear
-    opacity: 0
-    width: 380px
-    height: 301.656px
-    position: absolute
-    overflow: hidden
-    top: 0
-    left: 0
-
-.view
     img
-    	transform: scaleY(1)
-    	transition: all 0.7s ease-in-out
-        position: relative
+        width: 500px
+        box-shadow: 1px 1px 2px #e6e6e6
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%)
 
 .mask
+    margin-top: 10%
+
     span
-        text-decoration: none
+        background: linear-gradient(#c211cd, #d7123d)
         color: #fff
         text-transform: uppercase
-        position: absolute
-        left: 128px
-        top: 190px
-        opacity: 0
-        transform: scale(0)
-        transition: all 0.5s linear
-        background: #232338
         padding: 10px 30px
-        border: 1px solid #232338
         border-radius: 2px
-        box-shadow: 1px 1px 2px #151515
         font-size: 12px
 
-        &:hover
-            background: inherit
-            border: 1px solid #fff
-            box-shadow: none
-
-.mask
     p
-        color: #fff
-        opacity: 0
-        transform: scale(0)
-        transition: all 0.5s linear
-        position: relative
-        font-size: 12px
-        color: #fff
-        top: 22%
-        border-bottom: 1px solid rgba(255,255,255, 0.5)
-        margin: 0 80px
-
-.view
-    &:hover
-        .mask
-            opacity: 1
-
-.view
-    &:hover
-        img
-        	transform: scale(1.2)
-            opacity: 0
-
-        p
-            transform: scale(1)
-            opacity: 1
-            cursor: pointer
-
-        span
-            transform: scale(1)
-            opacity: 1
-            cursor: pointer
-
-@media (max-width: 1200px)
-
-    .project-item
-        max-width: 100%
-
-    .view
-        max-height: 100%
-        width: 100%
-        box-shadow: none
-
-        img
-            box-shadow: 1px 1px 2px #e6e6e6
-
-    .view
-        &:hover
-            img
-            	transform: scale(1)
-
-    .mask
-        background-image: none
-        opacity: 1
-        height: 100%
-        max-width: 100%
-        position: static
         padding-top: 10%
-        transition: none
+
+@media (min-width: 1201px)
+    .view
+        box-shadow: 1px 1px 2px #e6e6e6
+
+        &:hover
+            .mask
+                opacity: 1
+
+            img
+            	transform: scale(1.2)
+                opacity: 0
+
+            p
+                transform: scale(1)
+                opacity: 1
+
+            span
+                transform: scale(1)
+                opacity: 1
+                cursor: pointer
+
+        img
+        	transition: all 0.7s ease-in-out
+            position: relative
 
     .mask
+        background-image: url("../images/mask.png")
+        transition: all 0.5s linear
+        opacity: 0
+        width: 380px
+        height: 301.656px
+        position: absolute
+        margin-top: 0
+        top: 0
+
         span
-            opacity: 1
-            position: static
-            background: linear-gradient(#c211cd, #d7123d)
-            box-shadow: 1px 1px 2px #ccc
-            border: none
-            transform: scale(1)
+            position: absolute
+            left: 122.531px
+            top: 180px
+            opacity: 0
+            transform: scale(0)
+            transition: all 0.5s linear
+            background: #232338
+            border: 1px solid #232338
 
             &:hover
-                transform: scale(1)
-                border: none
-                background: linear-gradient(#c211cd, #d7123d)
+                background: inherit
+                border: 1px solid #fff
 
-    .mask
         p
-            opacity: 1
-            color: #151515
-            transform: scale(1)
-            transition: none
-            margin: 10px
-
-    .mask
-        &:hover
-            a
-            	text-decoration: none
+            color: #fff
+            opacity: 0
+            transform: scale(0)
+            transition: all 0.5s linear
+            position: relative
+            font-size: 12px
+            top: 25%
+            border-bottom: 1px solid rgba(255,255,255, 0.5)
+            margin: 0 80px
+            padding: 10px
 
 // SECTION DIAGRAM
 
@@ -402,42 +343,22 @@ h3
     ul
         padding: 0
 
-    img
-        display: inline-block
-
     p
-        padding: 2% 20%
+        padding: 5% 10%
         line-height: 30px
-
-.rectangle
-    border: 1px solid #d7123d
-    width: 80px
-    height: 10px
-    display: inline-block
-    margin-left: 10%
+        text-align: left
 
 .technologies, .graphic
     padding-top: 10%
 
     li
         list-style: none
-        font-size: 14px
 
-.graphic
-
-    li
-        list-style: none
-        font-size: 14px
-
-    .empty-circle,
+    .empty-circle
         border: 1px solid #c211cd
 
     .full-circle
         border: 3px solid #c211cd
-
-.scheme
-    p
-        font-size: 12px
 
 .full-circle
     display: inline-block
@@ -451,33 +372,33 @@ h3
     border: 1px solid #d7123d
     border-radius: 50%
 
-.scheme-phone
+.scheme
     display: none
 
-@media (max-width: 992px)
-    .technologies
-        margin-left: 0
+.scheme-phone
+    padding: 0 10%
 
-    ul
-        padding-left: 10px
-
-    .scheme
-        display: none
+@media (min-width: 993px)
 
     .scheme-phone
-        display: inline-block
-        padding: 0 15px
+        display: none
+
+    .scheme
+        display: block
 
     .diagram
         p
-            padding: 5% 10%
-            text-align: left
+            padding: 1% 25% 4%
+            text-align: center
 
 // SECTION CONTACT
 
 .contact
     text-align: center
     padding-bottom: 20px
+
+    h2
+        margin-top: 10%
 
     span
         color: #d7123d
@@ -486,33 +407,38 @@ h3
     ul
         padding: 0
 
+    li
+        display: inline-block
+        border: 1px solid rgba(0, 0, 0, 0.2)
+        width: 50px
+        height: 50px
+        transition: all 0.5s
+
+    i
+        color: #151515
+        line-height: 50px
+        font-size: 25px
+
+    img
+        transition: all 0.5s
+        &:hover
+            transform: translateY(-10px)
+
+.arrow-item
+    padding: 50px
+
+@media (min-width: 1201px)
+
+    .contact
+
+        h2
+            margin-top: 7%
+
         li
-            list-style: none
-            display: inline-block
             border: 2px solid rgba(0, 0, 0, 0.1)
-            width: 40px
-            height: 40px
-            transition: all 0.5s
 
             &:hover
                 cursor: pointer
                 border: 2px solid
                 border-image-source: linear-gradient(#c211cd, #d7123d)
                 border-image-slice: 1
-
-        i
-            color: #151515
-            line-height: 40px
-            font-size: 20px
-
-h4
-    font-weight: bold
-    font-size: 16px
-
-.arrow-item
-    padding: 60px
-
-    img
-        transition: all 0.5s
-        &:hover
-            transform: translateY(-10px)
