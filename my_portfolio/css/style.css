@@ -310,13 +310,23 @@ ul {
   padding: 16px;
   margin-top: -22px;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 32px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0; }
 
 .next {
   right: 0;
-  border-radius: 3px 0 0 30px; }
+  border-radius: 3px 0 0 30px;
+  -webkit-animation: move linear 1.5s infinite alternate;
+  animation: move linear 1.5s infinite alternate; }
+
+@-webkit-keyframes move {
+  from {
+    -webkit-transform-padding-left: 0;
+    padding-left: 0; }
+  to {
+    -webkit-transform-padding-left: 20px;
+    padding-left: 20px; } }
 
 .text {
   font-size: 14px;
@@ -328,9 +338,9 @@ ul {
   font-weight: 900 !important; }
 
 .control-buttons {
-  padding: 0 10% 10%; }
+  padding: 20px 10% 10%; }
   .control-buttons span {
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
     font-weight: 900 !important; }
 
@@ -358,7 +368,7 @@ ul {
       display: block;
       background-color: #fff; }
     .projects .side-header {
-      top: 35%; }
+      top: 40%; }
       .projects .side-header::before {
         background-color: #fff; }
       .projects .side-header::after {
@@ -377,7 +387,7 @@ ul {
   .text {
     padding: 30px 0; }
   .control-buttons {
-    padding: 0 0 80px;
+    padding: 30px 0 80px;
     max-width: 600px;
     margin: 0 auto; }
   .prev:hover, .next:hover {
@@ -478,7 +488,7 @@ ul {
     .knowledge .line {
       display: block; }
     .knowledge .side-header {
-      top: 35%; }
+      top: 40%; }
     .knowledge .letter_S {
       display: block;
       background-image: url("../images/letter_S.png"); }
