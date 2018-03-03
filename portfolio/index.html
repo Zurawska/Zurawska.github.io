@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My_portfolio</title>
+        <title>Portfolio</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
@@ -18,39 +18,24 @@
                 </button>
             </div>
             <div class="nav-menu">
-                <ul>
+                <ul class="left-menu">
                     <li><a href="#home">About</a></li>
                     <li><a href="#works">Projects</a></li>
+                </ul>
+                <ul class="right-menu">
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </header>
         <section id="home" class="slogan" >
-            <div class="lines">
-                <div class="line line-1"></div>
-                <div class="line line-2"></div>
-                <div class="line line-3"></div>
-            </div>
-            <div class="get-in-touch">
-                <a href="mailto:edyta.zurawska8@gmail.com" target="_blank">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                </a>
-                <a href="https://github.com/Zurawska/" target="_blank">
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/edyta-zurawska/" target="_blank">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-            </div>
-            <div class="letter_A"></div>
             <div class="slogan-content">
-                <div class="side-header">About me</div>
                 <div class="name">
                     <h1>Edyta Zurawska</h1>
                     <h3>Creative Front-end Developer</h3>
                 </div>
                 <div class="about">
+                    <!-- <img src="images/line3.png"> -->
                     <div class="separator"></div>
                     <h3>Who I am and What I do</h3>
                     <p>I am a beginner front-end developer who is looking for suitable position in IT World. After gaining knowledge of coding which allows me to build
@@ -60,96 +45,45 @@
             </div>
         </section>
         <section id="works" class="projects">
-            <div class="lines">
-                <div class="line line-1"></div>
-                <div class="line line-2"></div>
-                <div class="line line-3"></div>
-            </div>
-            <div class="letter_P"></div>
-            <div class="side-header">Projects</div>
+            <h2>Projects</h2>
+            <div class="separator"></div>
+            <!-- <img src="images/crossline.png"> -->
             <div class="slideshow-container">
-                <h2>Projects</h2>
-                <div class="separator"></div>
                 <div class="mySlides fade">
-                    <div class="text">
-                        <span class="numbertext">01</span>
-                        Responsive website.<br>The project created on based a png template.
-                        <br>Technologies used:
-                        HTML5, CSS3.
-                    </div>
-                    <a href="https://zurawska.github.io/project3/" target="_blank"><img src="images/website1.png"></a>
+                    <img src="images/website1.png" style="width:100%">
+                    <div class="text"><span class="numbertext">01</span>Responsive website based
+                    on layout.
+                    My first project created as part of online course.
+                    <br>Technologies used:
+                    HTML5, CSS</div>
                 </div>
                 <div class="mySlides fade">
-                    <div class="text">
-                        <span class="numbertext">02</span>
-                        Responsive website.<br>The project created on based a png template.
-                        <br>Technologies used:
-                        HTML5, CSS3.
-                    </div>
-                    <a href="https://zurawska.github.io/project2/" target="_blank"><img src="images/website2.png"></a>
+                    <!-- <div class="numbertext">02</div> -->
+                    <img src="images/website2.png" style="width:100%">
+                    <div class="text"><span class="numbertext">02</span>Responsive website based
+                    on layout.
+                    My second project created as part of online course.
+                    <br>Technologies used:
+                    HTML5, CSS</div>
                 </div>
                 <div class="mySlides fade">
-                    <div class="text">
-                        <span class="numbertext">03</span>
-                        Kanban board for planing your day.
-                        <br>Technologies used:
-                        HTML5, CSS3, JavaScript, jQuery.
-                    </div>
-                    <a href="https://zurawska.github.io/kanban/" target="_blank"><img src="images/kanban.png"></a>
+                    <!-- <div class="numbertext">03</div> -->
+                    <img src="images/kanban.png" style="width:100%">
+                    <div class="text"><span class="numbertext">03</span>Kanban
+                    My first project created as part of online course.
+                    <br>Technologies used:
+                    HTML5, CSS</div>
                 </div>
-                <div class="mySlides fade">
-                    <div class="text">
-                        <span class="numbertext">04</span>
-                        Traditional game. Rock Paper Scissors.
-                        <br>Technologies used:
-                        HTML5, CSS3, JavaScript.
-                    </div>
-                    <a href="https://zurawska.github.io/game/" target="_blank"><img src="images/game.png"></a>
-                </div>
-                <div class="mySlides fade">
-                    <div class="text">
-                        <span class="numbertext">05</span>
-                        Country search engine.
-                        <br>Technologies used:
-                        HTML5, CSS3, JavaScript, jQuery.
-                    </div>
-                    <a href="https://zurawska.github.io/country_search" target="_blank"><img src="images/country_search.png"></a>
-                </div>
-                <div class="mySlides fade">
-                    <div class="text">
-                        <span class="numbertext">06</span>
-                        The first version of my portfolio.
-                        <br>Technologies used:
-                        HTML5, CSS3, Bootstrap, JavaScript, jQuery.
-                    </div>
-                    <a href="https://zurawska.github.io/portfolio" target="_blank"><img src="images/first_portfolio.png"></a>
-                </div>
-                <div class="mySlides fade">
-                    <div class="text">
-                        <span class="numbertext">07</span>
-                        Ilkley Christmas Tree Festival 2018.
-                        <br>Project's design created in Photoshop - work in progress.
-                    </div>
-                    <a href="images/festival_fullpage.png" target="_blank"><img src="images/festival.png"></a>
-                </div>
-                <div class="control-buttons">
-                    <span>see next project</span>
-                    <a class="prev">&#10094;</a>
-                    <a class="next">&#10095;</a>
-                </div>
+                <span>see next project</span>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
         </section>
-        <section id="skills" class="knowledge">
-            <div class="lines">
-                <div class="line line-1"></div>
-                <div class="line line-2"></div>
-                <div class="line line-3"></div>
-            </div>
-            <div class="letter_S"></div>
-            <div class="side-header">skills</div>
-            <div class="skills-description">
+        <section id="skills" class="skills">
+            <div class="head-skills">
                 <h2>Skills</h2>
                 <div class="separator"></div>
+                <!-- <img src="images/crossline1.png"> -->
                 <p>As a beginner in web development I have a knowledge of technologies which allows me to create web sites.
                     I am motivated and eager to learn new skills in order to become professional. Every day I broaden my knowledge in technologies
                     I already know and also I look to learn new ones.
@@ -157,97 +91,80 @@
                     for websites including logos, icons, diagrams and drawings.</p>
             </div>
             <div class="flex-container">
-        		<div class="box">
-        				<div class="card not-flipped">
-        				<div class="card-container">
-        					<div class="front">
-                                <div class="technology">
-                                    <h3>Coding</h3>
-                                    <i class="fa fa-code" aria-hidden="true"></i>
-                                </div>
-        					</div>
-        					<div class="back">
-                                <p>Technologies, languages and libraries which I use for building websites.</p>
-                                <ul>
-                                    <li>HTML5</li>
-                                    <li>CSS3, Sass</li>
-                                    <li>JavaScript, jQuery</li>
-                                    <li>Bootstrap</li>
-                                    <li>Git, Github</li>
-                                    <li>Grunt</li>
-                                </ul>
-        					</div>
-        				</div>
-        			</div>
-        		</div>
-        		<div class="box">
-        			<div class="card not-flipped">
-        				<div class="card-container">
-        					<div class="front">
-                                <div class="technology">
-                                    <h3>RWD</h3>
-                                    <i class="fa fa-laptop" aria-hidden="true"></i>
-                                </div>
-        					</div>
-        					<div class="back">
-        						<p>I can create for You responsive websites perfectly displaying on every device by using the <span> grid system, "flex" concept</span> and<span> media queries.</span></p>
-        					</div>
-        				</div>
-        			</div>
-        		</div>
-        		<div class="box">
-        			<div class="card not-flipped">
-        				<div class="card-container">
-        					<div class="front">
-                                <div class="technology">
-                                    <h3>Graphic design</h3>
-                                    <i class="fa fa-paint-brush" aria-hidden="true"></i>
-                                </div>
-        					</div>
-        					<div class="back">
-                                <p>To create eye-friendly websites I use the following programs:</p>
-                                <ul>
-                                    <li>Illustrator</li>
-                                    <li>Photoshop</li>
-                                    <li>Gimp</li>
-                                    <li>Avocode</li>
-                                </ul>
-        					</div>
-        				</div>
-        			</div>
-        		</div>
-            </div>
+                <!-- <div class="row"> -->
+            		<div class="span6">
+            				<div class="card not-flipped">
+            				<div class="card-container">
+            					<div class="front">
+                                    <div class="technology">
+                                        <h3>Coding</h3>
+                                        <i class="fa fa-code" aria-hidden="true"></i>
+                                    </div>
+            					</div>
+            					<div class="back">
+            						<h2>Some text on the back</h2>
+            						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id commodo nunc.
+                                        Pellentesque porttitor luctus purus ac feugiat. Nunc dictum augue quis quam laoreet, a vehicula massa commodo.</p>
+            					</div>
+            				</div>
+            			</div><!-- .card -->
+            		</div><!-- .span6 -->
+            		<div class="span6">
+            			<div class="card not-flipped">
+            				<div class="card-container">
+            					<div class="front">
+                                    <div class="technology">
+                                        <h3>RWD</h3>
+                                        <i class="fa fa-laptop" aria-hidden="true"></i>
+                                    </div>
+            					</div>
+            					<div class="back">
+            						<h2>Some text on the back</h2>
+            						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id commodo nunc.
+                                        Pellentesque porttitor luctus purus ac feugiat. Nunc dictum augue quis quam laoreet, a vehicula massa commodo.</p>
+            					</div>
+            				</div>
+            			</div><!-- .card -->
+            		</div><!-- .span6 -->
+            		<div class="span6">
+            			<div class="card not-flipped">
+            				<div class="card-container">
+            					<div class="front">
+                                    <div class="technology">
+                                        <h3>Graphic design</h3>
+                                        <i class="fa fa-paint-brush" aria-hidden="true"></i>
+                                    </div>
+            					</div>
+            					<div class="back">
+            						<h2>Some text on the back</h2>
+            						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id commodo nunc.
+                                        Pellentesque porttitor luctus purus ac feugiat. Nunc dictum augue quis quam laoreet, a vehicula massa commodo.</p>
+            					</div>
+            				</div>
+            			</div><!-- .card -->
+            		</div><!-- .span6 -->
+            	<!-- </div><! .row -->
+            </div><!-- .container -->
         </section>
-        <section id="contact" class="contact-info">
-            <div class="lines">
-                <div class="line line-1"></div>
-                <div class="line line-2"></div>
-                <div class="line line-3"></div>
+        <section id="contact" class="footer">
+            <h2>Contact</h2>
+            <div class="separator"></div>
+            <div class="social-media">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <a href="https://github.com/Zurawska/" target="_blank">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/edyta-zurawska/" target="_blank">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
             </div>
-            <div class="contact-content">
-                <div class="side-header">contact</div>
-                <h2>Contact</h2>
-                <div class="separator"></div>
-                <div class="social-media">
-                    <a href="mailto:edyta.zurawska8@gmail.com" target="_blank">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://github.com/Zurawska/" target="_blank">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/edyta-zurawska/" target="_blank">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
+            <p>Made by Edyta Zurawska<span> &copy </span>2018</p>
         </section>
-        <footer>
-            <div>
-                <p>Made by Edyta Zurawska<span> &copy </span>2018</p>
-            </div>
-        </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
         <script type="text/javascript" src="scripts/main.script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
     </body>
 </html>
