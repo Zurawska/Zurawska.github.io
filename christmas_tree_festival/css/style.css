@@ -166,7 +166,6 @@ h2 {
   h2 span {
     font-weight: bold;
     color: #e31858;
-    font-size: 26px;
     font-family: 'Berkshire Swash', cursive;
     font-weight: lighter; }
 
@@ -175,7 +174,9 @@ h2 {
     font-size: 48px;
     padding-bottom: 80px; }
   .home-headers {
-    transform: translate(0, 40%); } }
+    transform: translate(0, 40%); }
+  h2 span {
+    font-size: 26px; } }
 
 .info {
   padding: 0 10%; }
