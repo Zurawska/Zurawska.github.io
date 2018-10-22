@@ -140,7 +140,7 @@ ul {
 h1 {
   font-family: 'Berkshire Swash', cursive;
   font-weight: lighter;
-  font-size: 32px;
+  font-size: 30px;
   padding-bottom: 50px; }
   h1 span::before {
     background-color: #000;
@@ -162,8 +162,9 @@ h1 {
     left: 5px; }
 
 h2 {
-  font-size: 20px; }
+  font-size: 18px; }
   h2 span {
+    font-size: 20px;
     font-weight: bold;
     color: #e31858;
     font-family: 'Berkshire Swash', cursive;
@@ -249,7 +250,7 @@ h2 {
     color: #555;
     font-style: italic; }
   .program ul {
-    padding-left: 20px; }
+    padding-left: 10px; }
     .program ul li {
       display: block; }
     .program ul span {
