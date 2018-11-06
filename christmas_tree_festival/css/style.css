@@ -239,9 +239,10 @@ h2 {
     margin-top: 50px; }
   .program h2 {
     text-align: center;
-    padding: 15% 0 10%; }
+    padding: 20% 0 0; }
   .program h3 {
-    padding: 10px 0; }
+    padding: 10px 0;
+    margin-top: 50px; }
   .program h5 {
     text-align: center;
     padding: 10% 0 0;
@@ -261,9 +262,39 @@ h2 {
     padding: 0 15%; }
     .program h2 {
       text-align: center;
-      padding: 5% 0; }
+      padding: 10% 0 2%; }
     .program h5 {
       padding: 3% 0 0; } }
+
+.organisations {
+  padding: 0 10%; }
+  .organisations::after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+    margin-top: 50px; }
+  .organisations h2 {
+    text-align: center;
+    padding: 20% 0 10%; }
+  .organisations h3 {
+    text-align: center;
+    padding-bottom: 5%; }
+  .organisations ol {
+    padding-left: 10%; }
+    .organisations ol li {
+      margin: 15px 0; }
+
+@media (min-width: 1200px) {
+  .organisations {
+    padding: 0 15%; }
+    .organisations h2 {
+      padding: 5% 0; }
+    .organisations ol {
+      padding-left: 15px; } }
 
 .contact {
   text-align: center;
