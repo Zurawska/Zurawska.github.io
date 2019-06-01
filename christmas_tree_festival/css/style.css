@@ -266,6 +266,40 @@ h2 {
     .program h5 {
       padding: 3% 0 0; } }
 
+.music {
+  padding: 0 10%; }
+  .music::after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+    margin-top: 50px; }
+  .music h2 {
+    text-align: center;
+    padding: 20% 0 0; }
+  .music h3 {
+    padding: 10px 0;
+    margin-top: 50px; }
+  .music ul {
+    padding-left: 0; }
+    .music ul li {
+      display: block;
+      padding-left: 0; }
+    .music ul span {
+      font-weight: bold; }
+
+@media (min-width: 1200px) {
+  .music {
+    padding: 0 15%; }
+    .music h2 {
+      text-align: center;
+      padding: 10% 0 2%; }
+    .music h5 {
+      padding: 3% 0 0; } }
+
 .organisations {
   padding: 0 10%; }
   .organisations::after {
